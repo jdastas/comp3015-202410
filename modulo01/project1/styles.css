@@ -64,14 +64,3 @@ nav ul li a:hover {
 #banner button:hover {
   background-color: #ddd;
 }
-
-#perros {
-  background: beige;
-  display: block;
-  height: 400px;
-  text-align: center;
-
-}
-#perros h2 {
-  padding: 20px 10px;
-}
