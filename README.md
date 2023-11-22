@@ -1,3 +1,3 @@
 # COMP 2315 WEB PROGRAMMING WITH DATABASES
-Curso COMP 3015 Programación Web con Bases de Datos, sección de los martes y jueves.
+Curso COMP 3015 Programación Web con Bases de Datos.
 
