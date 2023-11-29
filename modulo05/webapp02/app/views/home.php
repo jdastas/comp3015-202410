@@ -28,8 +28,11 @@
                     <?php 
                         if (isset($data)) // if Data exist
                         {
-                            echo isset($data['message']) ? $data['message'] : "";
-                            // require_once 'user/list.php';
+                            if (isset($data['message'])) {
+                                echo '<div class="alert alert-warning">';
+                                echo $data['message'];
+                                echo '</div>';
+                            }
                             require_once $data['view'];
                         }
                         else {

@@ -2,6 +2,8 @@
     $user = $data['user'];
 ?>
     <div class="border border-secondary-300 p-4 ">
+        <h2 class='text-info'>Actualizar Usuario</h2>
+
 
         <form action="index.php?url=user/save/<?php echo $user['id']; ?>" method="post" class='form'>
             <div class="form-group mb-3">
@@ -18,7 +20,7 @@
             <div class="form-group mb-3">
                 <label>Clave</label>
                 <input type="password" name="clave" class='form-control'  placeholder="Nueva Contraseña" 
-                    value="<?php echo $user['email']; ?>" required>            
+                    value="<?php echo $user['clave']; ?>" required>            
             </div>
             <div class="form-group">
                 <button class='btn btn-secondary'>Cancelar</button>

@@ -19,7 +19,7 @@
                             <th>Nombre</th>
                             <th>Email</th>
                             <th class='text-center'>
-                                <a href='' class='btn btn-primary'>New</a>
+                            <a href='index.php?url=user/create/' class='btn btn-primary'>Crear</a>
                             </th>
                         <!-- Otros campos según sea necesario -->
                     </tr>
@@ -31,8 +31,8 @@
                             <td><?php echo htmlspecialchars($user['email'], ENT_QUOTES, 'UTF-8'); ?></td>
                             <!-- Otros campos según sea necesario -->
                             <td class='text-center'>
-                                <a href='index.php?url=user/update/<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>' class='btn btn-success'>Edit</a>
-                                <a href='index.php?url=user/delete/<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>' class='btn btn-danger'>Delete</a>
+                                <a href='index.php?url=user/update/<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>' class='btn btn-success'>Editar</a>
+                                <a href='index.php?url=user/delete/<?php echo htmlspecialchars($user['id'], ENT_QUOTES, 'UTF-8'); ?>' class='btn btn-danger'>Borrar</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

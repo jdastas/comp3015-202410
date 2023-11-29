@@ -1,8 +1,11 @@
 <?php
 
 require_once './app/config/Database.php';
+
 require_once './app/models/UserModel.php';
 require_once './app/controllers/UserController.php';
+
+// Añadir aquí los controladores y modelos nuevos
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Captura todos los datos POST
@@ -23,17 +26,16 @@ else {
     $datos = $_POST;
 }
 
-// echo "* " . $controller;
-// echo "  ". (isset($_GET['url']) ? rtrim($_GET['url'], '/') : "");
-
 if (file_exists('./app/controllers/' . $controller . '.php')) {
     require_once './app/controllers/' . $controller . '.php';
     $controller = new $controller;
 
     if (method_exists($controller, $method)) {
-        if($id) {
-            if (isset($datos))
+
+        if (isset($id)) {
+            if (isset($datos)) {
                 $controller->$method($datos);
+            }
             else
                 $controller->$method($id);
         } else {
