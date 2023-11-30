@@ -19,6 +19,10 @@
                     <li><a href=".">Ver Usuarios</a></li>
                     <!-- Más enlaces de navegación según sea necesario -->
                 </ul>
+                <ul>
+                    <li><a href="./index.php?url=product/index">Ver Productos</a></li>
+                    <!-- Más enlaces de navegación según sea necesario -->
+                </ul>
             </nav>
         </header>
     
@@ -38,7 +42,7 @@
                         else {
                             $userController = new UserController();
                             $data = $userController->listUsers();
-                            require_once 'user/list.php';
+                            require 'user/list.php';
                         }
                     ?>
                 </div>

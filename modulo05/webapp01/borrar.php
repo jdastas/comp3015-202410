@@ -1,6 +1,7 @@
 <?php
+    include 'conexion.php';
 
-    $sql = "DELETE FROM usuarios WHERE id=1"; 
+    $sql = "DELETE FROM usuarios WHERE nombre like 'John Doe Swan'"; 
     if ($conexion->query($sql) === TRUE) { 
         echo "Registro eliminado con éxito"; 
     } else { 
